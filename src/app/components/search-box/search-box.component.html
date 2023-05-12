@@ -1,0 +1,12 @@
+<div class="box">
+  <h2 class="w-150">{{title | titlecase}}</h2>
+  <div class="search-box">
+    <input class="input" type="text" name="" #query (keyup.enter)="onSearch(query.value)" placeholder="Type to search...">
+    <a class="search-btn" (click)="onSearch(query.value)">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </a>
+  </div>
+  <div class="w-150"></div>
+</div>
+
+

@@ -1,0 +1,6 @@
+<div *ngIf="(items$ | async) as items">
+  <div class="container" *ngIf="items.length > 0">
+    <app-search-item *ngFor="let item of items" [itemInput]="item">
+    </app-search-item>
+  </div>
+</div>

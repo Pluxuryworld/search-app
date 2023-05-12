@@ -1,0 +1,10 @@
+<div class="item">
+  <div class="image-container" >
+    <img [src]="imageUrl" alt="Thumbnail" *ngIf="imageUrl">
+  </div>
+  <div class="description">
+    <h3>{{ item.snippet.title }}</h3>
+    <p>{{item.snippet.description}}</p>
+    <p>Chanel: <span class="text-decor">{{item.snippet.channelTitle}}</span></p>
+  </div>
+</div>
