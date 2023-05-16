@@ -1,0 +1,7 @@
+<div class="playerContainer">
+  <iframe class="player"
+    [src]="sanitize('https://www.youtube.com/embed/' + (videoId$ | async) + '?autoplay=1')"
+    frameBorder="0"
+    allowFullScreen>
+  </iframe>
+</div>

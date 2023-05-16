@@ -1,18 +1,22 @@
-import {Component, EventEmitter, Output} from '@angular/core';
-
+import {Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
+import { RequestService } from '../../services/request.service';
+import {query} from "@angular/animations";
 @Component({
   selector: 'app-search-box',
   templateUrl: './search-box.component.html',
   styleUrls: ['./search-box.component.scss']
 })
 export class SearchBoxComponent {
-
-  @Output() searchQuery = new EventEmitter<string>();
-
   title = 'Search app';
-
+  // @ts-ignore
+  @ViewChild("queryRef") inputField: ElementRef<HTMLInputElement> ;
+  @Output() searchQuery = new EventEmitter<string>();
   onSearch(value:string): void{
     this.searchQuery.emit(value);
   }
+  clearInput(): void {
+    this.searchQuery.emit('');
+    this.inputField.nativeElement.value = '';
 
+  }
 }

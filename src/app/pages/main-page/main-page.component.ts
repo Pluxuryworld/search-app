@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, NgModule, } from '@angular/core';
+import { RequestService} from "../../services/request.service";
+import { ContentComponent} from "../../components/content/content.component";
 
 
 @Component({

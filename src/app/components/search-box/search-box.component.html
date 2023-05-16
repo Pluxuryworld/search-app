@@ -1,8 +1,8 @@
 <div class="box">
-  <h2 class="w-150">{{title | titlecase}}</h2>
+  <h2 class="w-150" routerLink="" (click)="clearInput()" >{{title | titlecase}}</h2>
   <div class="search-box">
-    <input class="input" type="text" name="" #query (keyup.enter)="onSearch(query.value)" placeholder="Type to search...">
-    <a class="search-btn" (click)="onSearch(query.value)">
+    <input class="input" type="text" name="" #queryRef (keyup.enter)="onSearch(queryRef.value)" placeholder="Type to search...">
+    <a class="search-btn" (click)="onSearch(queryRef.value)" routerLink="">
       <i class="fa-solid fa-magnifying-glass"></i>
     </a>
   </div>

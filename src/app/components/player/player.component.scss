@@ -1,0 +1,12 @@
+.playerContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.player {
+  position: absolute;
+  margin: 15px;
+  width: 90%;
+  height: 85%;
+  border-radius: 15px;
+}

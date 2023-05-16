@@ -10,6 +10,7 @@ import { PlayerPageComponent} from './pages/player-page/player-page.component';
 import { MainPageComponent} from "./pages/main-page/main-page.component";
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {PlayerComponent} from "./components/player/player.component";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     SearchItemComponent,
     MainPageComponent,
     PlayerPageComponent,
+    PlayerComponent
 
   ],
   imports: [

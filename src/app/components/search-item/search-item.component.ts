@@ -7,11 +7,11 @@ import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 })
 export class SearchItemComponent implements OnChanges{
   imageUrl: string = '';
-  @Input() itemInput: any;
+  @Input() item: any;
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['itemInput'] && changes['itemInput'].currentValue) {
-      const currentItem = changes['itemInput'].currentValue;
+    if (changes['item'] && changes['item'].currentValue) {
+      const currentItem = changes['item'].currentValue;
       if (currentItem.snippet && currentItem.snippet.thumbnails) {
         this.imageUrl = currentItem.snippet.thumbnails.high.url;
         console.log(this.imageUrl);
