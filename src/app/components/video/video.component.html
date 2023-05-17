@@ -1,0 +1,10 @@
+<div class="video">
+  <div class="image-container" >
+    <img [src]="imageUrl" alt="Thumbnail" *ngIf="imageUrl">
+  </div>
+  <div class="description">
+    <h3>{{itemInput.snippet.title }}</h3>
+    <p>{{itemInput.snippet.description}}</p>
+    <p>Chanel: <span class="text-decor">{{itemInput.snippet.channelTitle}}</span></p>
+  </div>
+</div>

@@ -1,7 +1,16 @@
 <div *ngIf="(items$ | async) as items">
   <div class="container" *ngIf="items.length > 0">
-    <app-search-item *ngFor="let item of items" [item]="item"
-                     [routerLink]="['/player']"  [queryParams]="{ videoId: item.id.videoId }">
-    </app-search-item>
+    <ng-container *ngFor="let item of items">
+      <app-video *ngIf="item.id.kind === 'youtube#video'" [itemInput]="item"
+                       [routerLink]="['/player']"  [queryParams]="{ videoId: item.id.videoId }">
+      </app-video>
+      <app-channel *ngIf="item.id.kind === 'youtube#channel'" [itemInput]="item"
+                  [routerLink]="['/channel']"  [queryParams]="{ channelId: item.id.channel }">
+      </app-channel>
+      <app-playlist *ngIf="item.id.kind === 'youtube#playlist'" [itemInput]="item"
+                    [routerLink]="['/playlist']"  [queryParams]="{ playlistId: item.id.playlist }">
+      </app-playlist>
+    </ng-container>
   </div>
 </div>
+

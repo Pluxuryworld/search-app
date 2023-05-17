@@ -17,11 +17,10 @@ export class RequestService {
 
   search(query: string): void {
     const apiKey: string = 'AIzaSyB7mun4g6ZaMmaepCiZ46RUAQ2hk_6Ou4o';
-    const url = `https://www.googleapis.com/youtube/v3/search?part=id%2Csnippet&maxResults=10&type=video&q=${query}&key=${apiKey}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=id%2Csnippet&maxResults=13&q=${query}&key=${apiKey}`;
 
     this.http.get(url).pipe(
       tap((response) => this.result$.next(response))
     ).subscribe();
   }
-
 }

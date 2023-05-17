@@ -1,6 +1,5 @@
-import {Component, NgModule} from '@angular/core';
-import {RequestService} from "./services/request.service";
-import {ContentComponent} from "./components/content/content.component";
+import { Component} from '@angular/core';
+import { RequestService} from "./services/request.service";
 
 @Component({
   selector: 'app-root',

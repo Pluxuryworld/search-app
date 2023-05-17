@@ -1,0 +1,9 @@
+<div class="chanel">
+  <div class="image-container" >
+    <img [src]="imageUrl" alt="Thumbnail" *ngIf="imageUrl">
+  </div>
+  <div class="description">
+    <h3><span style="color: red">{{itemInput.snippet.title }}</span></h3>
+    <p>{{itemInput.snippet.description}}</p>
+  </div>
+</div>

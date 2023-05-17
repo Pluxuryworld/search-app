@@ -1,6 +1,5 @@
 import {Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
-import { RequestService } from '../../services/request.service';
-import {query} from "@angular/animations";
+
 @Component({
   selector: 'app-search-box',
   templateUrl: './search-box.component.html',
