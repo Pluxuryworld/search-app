@@ -4,8 +4,7 @@
       <app-video *ngIf="item.id.kind === 'youtube#video'" [itemInput]="item"
                        [routerLink]="['/player']"  [queryParams]="{ videoId: item.id.videoId }">
       </app-video>
-      <app-channel *ngIf="item.id.kind === 'youtube#channel'" [itemInput]="item"
-                  [routerLink]="['/channel']"  [queryParams]="{ channelId: item.id.channel }">
+      <app-channel *ngIf="item.id.kind === 'youtube#channel'" [itemInput]="item">
       </app-channel>
       <app-playlist *ngIf="item.id.kind === 'youtube#playlist'" [itemInput]="item"
                     [routerLink]="['/playlist']"  [queryParams]="{ playlistId: item.id.playlist }">

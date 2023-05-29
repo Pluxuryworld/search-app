@@ -15,6 +15,7 @@ import { PlaylistComponent } from './components/playlist/playlist.component';
 import { ChannelComponent } from './components/channel/channel.component';
 import { PlaylistPageComponent } from './pages/playlist-page/playlist-page.component';
 import { ChannelPageComponent } from './pages/channel-page/channel-page.component';
+import { PlaylistPlayerComponent } from './components/playlist-player/playlist-player.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { ChannelPageComponent } from './pages/channel-page/channel-page.componen
     PlaylistComponent,
     ChannelComponent,
     PlaylistPageComponent,
-    ChannelPageComponent
+    ChannelPageComponent,
+    PlaylistPlayerComponent,
+
 
   ],
   imports: [

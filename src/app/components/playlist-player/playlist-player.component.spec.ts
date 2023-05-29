@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChannelPageComponent } from './channel-page.component';
+import { PlaylistPlayerComponent } from './playlist-player.component';
 
-describe('ChannelPageComponent', () => {
-  let component: ChannelPageComponent;
-  let fixture: ComponentFixture<ChannelPageComponent>;
+describe('PlaylistPlayerComponent', () => {
+  let component: PlaylistPlayerComponent;
+  let fixture: ComponentFixture<PlaylistPlayerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChannelPageComponent ]
+      declarations: [ PlaylistPlayerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ChannelPageComponent);
+    fixture = TestBed.createComponent(PlaylistPlayerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

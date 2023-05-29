@@ -18,5 +18,11 @@ export class ChannelComponent implements OnChanges{
       }
     }
   }
+
+  openChannelOnYouTube(channelId: string): void {
+    const youtubeUrl = `https://www.youtube.com/channel/${channelId}`;
+    window.open(youtubeUrl, '_blank');
+  }
+
 }
 

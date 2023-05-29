@@ -1,5 +1,4 @@
 import { Component, OnInit} from '@angular/core';
-import { PlayerComponent} from "../../components/player/player.component";
 
 @Component({
   selector: 'app-player-page',
