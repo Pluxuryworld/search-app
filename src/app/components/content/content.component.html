@@ -7,7 +7,7 @@
       <app-channel *ngIf="item.id.kind === 'youtube#channel'" [itemInput]="item">
       </app-channel>
       <app-playlist *ngIf="item.id.kind === 'youtube#playlist'" [itemInput]="item"
-                    [routerLink]="['/playlist']"  [queryParams]="{ playlistId: item.id.playlist }">
+                    [routerLink]="['/playlist']"  [queryParams]="{ playlistId: item.id.playlistId }">
       </app-playlist>
     </ng-container>
   </div>

@@ -16,7 +16,7 @@ export class PlaylistPlayerComponent {
   constructor(private route: ActivatedRoute,
               private sanitizer: DomSanitizer) {
     this.playlistId$ = this.route.queryParams.pipe(
-      map((params) => params['videoId'])
+      map((params) => params['playlistId'])
     )
   }
 

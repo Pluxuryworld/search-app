@@ -1,6 +1,6 @@
 <div class="playlist-playerContainer">
   <iframe class="player"
-          [src]="sanitize('https://www.youtube.com/embed/' + (playlistId$ | async) + '?autoplay=1')"
+          [src]="sanitize('https://www.youtube.com/embed/?listType=playlist&list=' + (playlistId$ | async ))"
           frameBorder="0"
           allowFullScreen>
   </iframe>

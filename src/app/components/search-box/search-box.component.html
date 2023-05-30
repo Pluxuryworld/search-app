@@ -2,7 +2,7 @@
   <h2 class="w-150" routerLink="" (click)="clearInput()" >{{title | titlecase}}</h2>
   <div class="search-box">
     <input class="input" type="text" name="" #queryRef (keyup.enter)="onSearch(queryRef.value)" placeholder="Type to search...">
-    <a class="search-btn" (click)="onSearch(queryRef.value)" routerLink="">
+    <a class="search-btn" (click)="onSearch(queryRef.value)" >
       <i class="fa-solid fa-magnifying-glass"></i>
     </a>
   </div>
